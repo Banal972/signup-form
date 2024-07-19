@@ -1,9 +1,9 @@
 import SignupForm from "./components/SignupForm";
 
 export const metadata = {
-  title: "App Router",
+  title: "과제",
 };
 
 export default function Page() {
-  return <SignupForm/>
+  return <SignupForm />;
 }
