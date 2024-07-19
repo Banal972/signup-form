@@ -78,7 +78,13 @@ const SignupForm: React.FC = () => {
     const confirmPasswordError = confirmPasswordCheck(confirmPassword);
     const emailError = emailCheck(email);
 
-    if (idError || nameError) {
+    if (
+      idError ||
+      nameError ||
+      passwordError ||
+      confirmPasswordError ||
+      emailError
+    ) {
       setError((prev) => ({
         ...prev,
         id: idError,
